@@ -1,0 +1,35 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+}
+
+/* 1rem = 100px */
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.14rem;
+    color: #333;
+    font-family: Microsoft YaHei, SimSun, serif;
+    background: #fff;
+}
+ol, ul, li {
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+a {
+    text-decoration: none;
+}
+button {
+    outline: none;
+    border: none;
+}
