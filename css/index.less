@@ -1,0 +1,95 @@
+@charset "UTF-8";
+@boxShadow: {
+  box-shadow: 0 2px 7px 0.7px rgba(0,0,0,0.15);
+  border-radius: 0.05rem;
+}
+@cursorPointer: {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.indexContainer{
+  padding: 0 0.125rem;
+}
+.bannerContainer{
+  padding: 0.1rem 0;
+  .banner{
+    width: 3.5rem;
+    height: 1.6rem;
+  }
+}
+.menu{
+  //height: 1.6rem;
+  @boxShadow();
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0.25rem;
+  li{
+    width: 0.45rem;
+    height: 0.8rem;
+    text-align: center;
+    color: #333;
+    padding-top: 0.15rem;
+    img{
+      width: 0.35rem;
+      height: 0.32rem;
+      margin-bottom: 0.05rem;
+    }
+    &:nth-child(3n-1) {
+      margin: 0 0.825rem;
+    }
+    &:nth-child(n+3){
+      padding-top: 0.1rem;
+    }
+  }
+}
+.activityContainer{
+  @boxShadow();
+  margin-top: 0.15rem;
+  padding: 0.12rem 0.1rem;
+  .title{
+    font-size: 0.18rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    a{
+      font-size: 0.14rem;
+      color: #999;
+    }
+  }
+}
+.activityItem{
+  padding: 0.15rem 0;
+  border-bottom: 1px solid #ddd;
+  @cursorPointer();
+  display: flex;
+  img{
+    width: 1.6rem;
+    height: 0.8rem;
+    margin-right: 0.14rem;
+  }
+  &:last-child{
+    border-bottom: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

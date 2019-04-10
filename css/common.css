@@ -33,3 +33,6 @@ button {
     outline: none;
     border: none;
 }
+img{
+    vertical-align: middle;
+}
