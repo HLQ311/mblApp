@@ -3,6 +3,11 @@
   box-shadow: 0 2px 7px 0.7px rgba(0,0,0,0.15);
   border-radius: 0.05rem;
 }
+@textHidden:{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 @cursorPointer: {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
@@ -46,7 +51,6 @@
   padding: 0.12rem 0.1rem;
   .title{
     font-size: 0.18rem;
-    font-weight: bold;
     display: flex;
     justify-content: space-between;
     a{
@@ -69,19 +73,140 @@
     border-bottom: none;
   }
 }
+.activityContent{
+  flex: 1;
+  width: 1.5rem;
+  h2{
+    font-size: 0.18rem;
+    line-height: 0.18rem;
+    height: 0.36rem;
+    margin-bottom: 0.05rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;  // 控制多行的行数
+    -webkit-box-orient: vertical;
+  }
+  .activityDesc{
+    @textHidden();
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.05rem;
+    span{
+      font-size: 0.12rem;
+      color: #999;
+    }
+  }
+}
+
+.applyInfo{
+  height: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 0.2rem;
+  p{
+    color: #1296DB;
+    font-size: 0.12rem;
+    height: 0.2rem;
+    border: 1px solid #1296DB;
+    border-radius: 3px;
+    padding: 0 0.05rem;
+  }
+  .fee{
+    color: #f0ae23;
+  }
+}
+.proposal{
+  background: url(../img/icon_fix_book.png) no-repeat;
+  background-size: contain;
+  width: 0.6rem;
+  height: 0.5rem;
+  display: block;
+  position: fixed;
+  right: 0.125rem;
+  bottom: 2.5rem;
+}
 
 
+.proposalModal{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0, 0.2);
+  z-index: 100;
+  //display: none;
+}
 
-
-
-
-
-
-
-
-
-
-
+.proposalContainer{
+  background: url(../img/proposal.png) no-repeat;
+  background-size: contain;
+  width: 2.95rem;
+  height: 4.14rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -2.07rem;
+  margin-left: -1.475rem;
+  padding: 0 0.25rem;
+  h1{
+    font-size: 0.18rem;
+    text-align: center;
+    line-height: 0.35rem;
+  }
+  article{
+    height: 2.65rem;
+    overflow: scroll;
+    h2{
+      font-size: 0.13rem;
+      margin-bottom: 0.05rem;
+    }
+    p{
+      font-size: 0.12rem;
+      line-height: 0.18rem;
+      text-align: justify;
+    }
+  }
+}
+.closeBtn{
+  position: absolute;
+  bottom: -0.4rem;
+  width: 0.28rem;
+  height: 0.28rem;
+  border-radius: 0.14rem;
+  left: 50%;
+  margin-left: -0.14rem;
+  background: url(../img/Close.png) no-repeat;
+  background-size: contain;
+}
+.formContainer{
+  padding: 0 0.05rem;
+  button{
+    color: #fff;
+    font-size: 0.16rem;
+    text-align: center;
+    line-height: 0.32rem;
+    border-radius: 4px;
+    background: #43E48E;
+    display: block;
+    width: 100%;
+  }
+}
+.checkboxContainer{
+  padding: 0.16rem 0;
+  display: flex;
+  align-items: center;
+  img{
+    width: 0.15rem;
+    height: 0.15rem;
+    margin-right: 0.08rem;
+  }
+  p{
+    line-height: 0.15rem;
+  }
+}
 
 
 
