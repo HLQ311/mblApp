@@ -1,6 +1,7 @@
 @charset "UTF-8";
 .indexContainer {
   padding: 0 0.125rem;
+  padding-bottom: 0.7rem;
 }
 .bannerContainer {
   padding: 0.1rem 0;
