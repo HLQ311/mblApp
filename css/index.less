@@ -23,23 +23,20 @@
   @boxShadow();
   display: flex;
   flex-wrap: wrap;
-  padding: 0 0.25rem;
-  li{
-    width: 0.45rem;
+  justify-content: space-between;
+  a{
+    width: 0.93rem;
     height: 0.8rem;
     text-align: center;
     color: #333;
-    padding-top: 0.15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     img{
       width: 0.35rem;
       height: 0.32rem;
       margin-bottom: 0.05rem;
-    }
-    &:nth-child(3n-1) {
-      margin: 0 0.825rem;
-    }
-    &:nth-child(n+3){
-      padding-top: 0.1rem;
     }
   }
 }
