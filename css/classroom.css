@@ -1,0 +1,110 @@
+@charset "UTF-8";
+.classroomContainer {
+  background: #eee;
+  padding-top: 0.44rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background: #fff;
+  display: flex;
+}
+.nav a {
+  color: #333;
+  font-size: 0.18rem;
+  position: relative;
+  padding: 0.1rem 0;
+  text-align: center;
+  flex: 1;
+}
+.nav a:after {
+  content: '';
+  position: absolute;
+  height: 0.02rem;
+  width: 0.42rem;
+  left: 50%;
+  margin-left: -0.21rem;
+  background: transparent;
+  bottom: 0;
+}
+.nav a.active {
+  color: #f0ad22;
+}
+.nav a.active:after {
+  background: #f0ad22;
+}
+.mainContainer {
+  padding: 0 0.15rem;
+  margin-top: 0.05rem;
+  padding-bottom: 0.5rem;
+  background: #fff;
+  flex: 1;
+}
+.mainNav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.1rem 0;
+}
+.mainNav a {
+  width: 0.7rem;
+  height: 0.25rem;
+  text-align: center;
+  line-height: 0.25rem;
+  color: #999;
+}
+.mainNav a.active {
+  background: #eee;
+  border-radius: 3px;
+}
+.contentItem {
+  display: flex;
+  justify-content: space-between;
+}
+.contentItem .itemCard {
+  width: 1.65rem;
+  margin-bottom: 0.2rem;
+}
+.contentItem .itemCard p {
+  color: #333;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 0.06rem;
+}
+.contentItem .itemCard a {
+  display: flex;
+  position: relative;
+  height: 0.79rem;
+  align-items: center;
+  justify-content: center;
+}
+.contentItem .itemCard a.videoCard:after {
+  content: '';
+  position: absolute;
+  width: 0.25rem;
+  height: 0.25rem;
+  left: 50%;
+  top: 50%;
+  margin-top: -0.125rem;
+  margin-left: -0.125rem;
+  background: url(../img/icon_video.png) no-repeat;
+  background-size: contain;
+}
+.contentItem .itemCard.pdfCard a {
+  background: #F2F2F2;
+  text-align: center;
+}
+.contentItem .itemCard.pdfCard img {
+  width: 0.51rem;
+  height: 0.57rem;
+}
+.contentItem .itemCard.videoCard img {
+  width: 1.65rem;
+  height: 0.79rem;
+}
