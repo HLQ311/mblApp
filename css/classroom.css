@@ -173,3 +173,65 @@
   text-align: right;
   padding-right: 0.15rem;
 }
+.testTitle {
+  font-size: 0.18rem;
+  margin-top: 0.15rem;
+}
+.questions {
+  padding: 0.2rem 0;
+  border-bottom: 1px solid #eeeeee;
+}
+.questions:last-child {
+  border-bottom: none;
+}
+.questions h3 {
+  font-size: 0.16rem;
+  margin-bottom: 0.15rem;
+}
+.answers {
+  padding-left: 0.1rem;
+  display: flex;
+  color: #666;
+  line-height: 0.24rem;
+  margin-bottom: 0.14rem;
+}
+.answers b {
+  width: 0.24rem;
+  height: 0.24rem;
+  border-radius: 0.12rem;
+  border: 1px solid #eee;
+  text-align: center;
+  font-weight: normal;
+  margin-right: 0.15rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.answers p {
+  flex: 1;
+}
+.answerTip {
+  color: #f0ae23;
+  font-size: 0.16rem;
+  padding-left: 0.05rem;
+  margin-bottom: 0.08rem;
+}
+.answerOptions {
+  display: flex;
+  padding: 0 0.55rem;
+  justify-content: space-between;
+}
+.answerOptions a {
+  width: 0.24rem;
+  height: 0.24rem;
+  border-radius: 0.12rem;
+  border: 1px solid #eee;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #333;
+}
+.answerOptions a.active {
+  color: #fff;
+  background: #f0ae23;
+}

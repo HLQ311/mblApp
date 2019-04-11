@@ -15,7 +15,7 @@
             <a href="javascript:;" class="active" data-id="#inlineClass">在线课堂</a>
             <a href="javascript:;" data-id="#games">体验游戏</a>
             <a href="javascript:;" data-id="#chuangyi">创意课堂</a>
-            <a href="javascript:;">学习测试</a>
+            <a href="javascript:;" data-id="#test">学习测试</a>
         </nav>
         <main class="mainContainer">
             <div class="sections " id="inlineClass">
@@ -160,7 +160,7 @@
                 </ul>
             </div>
 
-            <div class="sections active" id="chuangyi">
+            <div class="sections" id="chuangyi">
                 <div class="chuangyiList">
                     <a href="javascript:;" class="chuangyiItem">
                         <img src="img/chuangyi.png" alt=""/>
@@ -197,6 +197,96 @@
                     </a>
                 </div>
             </div>
+
+            <div class="sections active" id="test">
+                <h2 class="testTitle">生活常识小测试</h2>
+                <ul>
+                   <li class="questions">
+                       <h3>1.例举生活中不卫生的行为(三种以上)</h3>
+                       <ul>
+                           <li class="answers">
+                               <b>A</b>
+                               <p>随地吐痰</p>
+                           </li>
+                           <li class="answers">
+                               <b>B</b>
+                               <p>乱丢果皮纸屑</p>
+                           </li>
+                           <li class="answers">
+                               <b>C</b>
+                               <p>随地大小便</p>
+                           </li>
+                           <li class="answers">
+                               <b>D</b>
+                               <p>不爱护公共设施</p>
+                           </li>
+                       </ul>
+                       <p class="answerTip">答题</p>
+                       <div class="answerOptions">
+                           <a href="javascript:;">A</a>
+                           <a href="javascript:;">B</a>
+                           <a href="javascript:;">C</a>
+                           <a href="javascript:;">D</a>
+                       </div>
+                   </li>
+                    <li class="questions">
+                        <h3>1.例举生活中不卫生的行为(三种以上)</h3>
+                        <ul>
+                            <li class="answers">
+                                <b>A</b>
+                                <p>随地吐痰</p>
+                            </li>
+                            <li class="answers">
+                                <b>B</b>
+                                <p>乱丢果皮纸屑</p>
+                            </li>
+                            <li class="answers">
+                                <b>C</b>
+                                <p>随地大小便</p>
+                            </li>
+                            <li class="answers">
+                                <b>D</b>
+                                <p>不爱护公共设施</p>
+                            </li>
+                        </ul>
+                        <p class="answerTip">答题</p>
+                        <div class="answerOptions">
+                            <a href="javascript:;">A</a>
+                            <a href="javascript:;">B</a>
+                            <a href="javascript:;">C</a>
+                            <a href="javascript:;">D</a>
+                        </div>
+                    </li>
+                    <li class="questions">
+                        <h3>1.例举生活中不卫生的行为(三种以上)</h3>
+                        <ul>
+                            <li class="answers">
+                                <b>A</b>
+                                <p>随地吐痰</p>
+                            </li>
+                            <li class="answers">
+                                <b>B</b>
+                                <p>乱丢果皮纸屑</p>
+                            </li>
+                            <li class="answers">
+                                <b>C</b>
+                                <p>随地大小便</p>
+                            </li>
+                            <li class="answers">
+                                <b>D</b>
+                                <p>不爱护公共设施</p>
+                            </li>
+                        </ul>
+                        <p class="answerTip">答题</p>
+                        <div class="answerOptions">
+                            <a href="javascript:;">A</a>
+                            <a href="javascript:;">B</a>
+                            <a href="javascript:;">C</a>
+                            <a href="javascript:;">D</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </main>
     </div>
     <footer id="footer"></footer>
@@ -210,6 +300,9 @@
             })
             $('.classroomContainer').on('click', '.mainNav a', function () {
                 $(this).addClass('active').siblings().removeClass('active')
+            })
+            $('.classroomContainer').on('click', '.answerOptions a', function () {
+                $(this).hasClass('active') ? $(this).removeClass('active') : $(this).addClass('active')
             })
         })
     </script>
