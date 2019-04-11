@@ -52,6 +52,12 @@
   background: #fff;
   flex: 1;
 }
+.sections{
+  display: none;
+  &.active{
+    display: block;
+  }
+}
 .mainNav{
   display: flex;
   justify-content: space-between;
@@ -75,6 +81,20 @@
   .itemCard{
     width: 1.65rem;
     margin-bottom: 0.2rem;
+    &.gameCard{
+      margin-bottom: 0.1rem;
+      a {
+        height: 1rem;
+      }
+      img{
+        height: 1rem;
+      }
+      p{
+        height: 0.28rem;
+        line-height: 0.28rem;
+        margin-bottom: 0;
+      }
+    }
     p{
       color: #333;
       @textHidden();

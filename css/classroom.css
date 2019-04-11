@@ -46,6 +46,12 @@
   background: #fff;
   flex: 1;
 }
+.sections {
+  display: none;
+}
+.sections.active {
+  display: block;
+}
 .mainNav {
   display: flex;
   justify-content: space-between;
@@ -69,6 +75,20 @@
 .contentItem .itemCard {
   width: 1.65rem;
   margin-bottom: 0.2rem;
+}
+.contentItem .itemCard.gameCard {
+  margin-bottom: 0.1rem;
+}
+.contentItem .itemCard.gameCard a {
+  height: 1rem;
+}
+.contentItem .itemCard.gameCard img {
+  height: 1rem;
+}
+.contentItem .itemCard.gameCard p {
+  height: 0.28rem;
+  line-height: 0.28rem;
+  margin-bottom: 0;
 }
 .contentItem .itemCard p {
   color: #333;
