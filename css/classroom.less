@@ -138,8 +138,49 @@
   }
 }
 
-
-
+.chuangyiItem{
+  padding: 0.12rem 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  &:last-child{
+    border-bottom: none;
+  }
+  img{
+    width: 1.65rem;
+    height: 0.88rem;
+    margin-right: 0.1rem;
+  }
+}
+.chuangyiRight{
+  flex: 1;
+  width: 1.65rem;
+  h2{
+    font-size: 0.16rem;
+    color: #333;
+    @textHidden();
+  }
+  .descriptions{
+    margin-top: 0.07rem;
+    color: #999;
+    font-size: 0.12rem;
+    height: 0.4rem;
+    line-height: 0.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;  // 控制多行的行数
+    -webkit-box-orient: vertical;
+    span{
+      margin-right: 0.15rem;
+    }
+  }
+  p{
+    color: #efae22;
+    font-size: 0.16rem;
+    text-align: right;
+    padding-right: 0.15rem;
+  }
+}
 
 
 
