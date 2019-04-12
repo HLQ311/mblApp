@@ -125,6 +125,7 @@
   bottom: 0;
   background: rgba(0, 0, 0, 0.2);
   z-index: 100;
+  display: none;
 }
 .proposalContainer {
   background: url(../img/proposal.png) no-repeat;
@@ -179,6 +180,7 @@
   background: #43E48E;
   display: block;
   width: 100%;
+  cursor: pointer;
 }
 .checkboxContainer {
   padding: 0.16rem 0;
@@ -193,3 +195,4 @@
 .checkboxContainer p {
   line-height: 0.15rem;
 }
+/*# sourceMappingURL=index.css.map */
