@@ -248,4 +248,12 @@
   margin-bottom: 0.2rem;
   margin-top: 0.1rem;
 }
+.userInfo {
+  padding-top: 0.15rem;
+}
+.userInfo p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 /*# sourceMappingURL=classroom.css.map */
