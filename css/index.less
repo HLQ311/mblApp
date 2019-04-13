@@ -130,7 +130,7 @@
 
 
 .proposalModal{
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -204,8 +204,49 @@
     height: 0.15rem;
     margin-right: 0.08rem;
   }
-  p{
+  &>label{
     line-height: 0.15rem;
+    display: flex;
+    align-items: center;
+  }
+  .checkbox {
+     display: none;
+  }
+  .checkbox + label {
+    -webkit-appearance: none;
+    background-color: #fafafa;
+    border: 1px solid #cacece;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    padding: 9px;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+    margin-right: 0.05rem;
+  }
+  .checkbox + label:active, .checkbox:checked + label:active {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+  }
+  .checkbox:checked + label {
+    background-color: #e9ecee;
+    color: #99a1a7;
+    border: 1px solid #adb8c0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1), inset 0px 0px 10px rgba(0,0,0,0.1);
+  }
+  .checkbox:checked + label:after {
+    content: ' ';
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    position: absolute;
+    top: 3px;
+    background: #43E48E;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+    text-shadow: 0;
+    left: 3px;
+    font-size: 32px;
+  }
+  .checkbox + label:active, .checkbox:checked + label:active {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
   }
 }
 

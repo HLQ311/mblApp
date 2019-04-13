@@ -125,15 +125,18 @@
             </article>
             <div class="formContainer">
                 <div class="checkboxContainer">
-                    <img src="img/checkbox.png" alt=""/>
-                    <p>我已确认阅读，积极支持倡议！</p>
+                    <label>
+                        <input type="checkbox" class="checkbox" id="checkbox"><label for="checkbox"></label>
+                        我已确认阅读，积极支持倡议！
+                    </label>
                 </div>
-                <button>确定阅读</button>
+                <button id="readBtn">确定阅读</button>
             </div>
         </div>
     </div>
 
     <footer id="footer"></footer>
+    <script src="js/layer.js"></script>
     <script>
         $(function () {
             $('#footer').load('footer.html')
@@ -142,6 +145,16 @@
             })
             $('#closeBtn').click(function () {
                 $('#proposalModal').fadeOut('fast')
+            })
+            $('#readBtn').click(function () {
+                if (!$("#checkbox").is(":checked")) {
+                    layer.open({
+                        content: "请先选择确认阅读",
+                        btn: '确定'
+                    })
+                } else {
+                    $('#proposalModal').fadeOut('fast')
+                }
             })
         })
     </script>
