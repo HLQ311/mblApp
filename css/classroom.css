@@ -235,4 +235,17 @@
   color: #fff;
   background: #f0ae23;
 }
+.submitBtn {
+  color: #fff;
+  font-size: 0.16rem;
+  text-align: center;
+  line-height: 0.32rem;
+  border-radius: 4px;
+  background: #f0ae23;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 0.2rem;
+  margin-top: 0.1rem;
+}
 /*# sourceMappingURL=classroom.css.map */
